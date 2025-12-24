@@ -13,20 +13,15 @@
 
 В основе моделирования лежит одномерное нестационарное уравнение Шрёдингера:
 
-\[
-i\hbar \frac{\partial \psi(x,t)}{\partial t}
-=
-\left(
--\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}
-+ V(x)
-\right)\psi(x,t)
-\]
+$$
+i\hbar \frac{\partial \psi(x,t)}{\partial t} = \left( -\frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} + V(x) \right)\psi(x,t).
+$$
 
 где:
-- \(\psi(x,t)\) — волновая функция квантовой частицы,
-- \(V(x)\) — внешний потенциал,
-- \(\hbar\) — приведённая постоянная Планка,
-- \(m\) — масса частицы.
+- $\psi(x,t)$ — волновая функция квантовой частицы,
+- $V(x)$ — внешний потенциал,
+- $\hbar$ — приведённая постоянная Планка,
+- $m$ — масса частицы.
 
 В проекте используются безразмерные единицы (\(\hbar = 1\), \(m = 1\)).
 
@@ -46,6 +41,7 @@ i\hbar \frac{\partial \psi(x,t)}{\partial t}
 ---
 
 ## Структура проекта
+```
 quantum_wave_packet/
 ├── main.py
 ├── config.py
@@ -57,12 +53,12 @@ quantum_wave_packet/
 ├── potentials.py
 ├── visualization.py
 ├── animation.py
-├── experiments/
-│   ├── free_particle.py
-│   ├── potential_barrier.py
-│   ├── finite_well.py
-│   └── harmonic_oscillator.py
-
+└── experiments/
+    ├── free_particle.py
+    ├── potential_barrier.py
+    ├── finite_well.py
+    └── harmonic_oscillator.py
+```
 ---
 
 ## Основной сценарий (`main.py`)
